@@ -1,20 +1,15 @@
 # bash
-bash.jruns.com - run your many scripts from text file list
+github.apibash.com - run your many scripts from text file list
 
-    chmod +x jruns
-
-    ./apicup.sh github_org_repos jruns-com github.txt
-
-    sh .apicup/file_replace_string.sh "github.txt" "git@github.com:" "https:\/\/github.com\/"
-
-    ./jruns.sh "git clone" github.txt
-
-    ./jruns.sh "sh .apicup/get_project_from_git_url.sh" github.txt > projects.txt
-
-    ./jruns.sh "rm -rf" projects.txt 
-
+```bash
+chmod +x github
+github init
+github clone
+github pull
+github pull origin
 chmod +x projects
 ./projects rm -rf 
+```
 
 > Press return for all questions by keeping the defaults and empty passphrase. This will generate two files in the `~/.ssh` directory within your home directory:
 >
