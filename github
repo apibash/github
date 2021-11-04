@@ -1,7 +1,7 @@
 #!/bin/bash
 ACTION="$@"
-FILENAME=$(cat .github)
-for input in $FILENAME; do
+REPO_LIST=$(cat .github.repos)
+for input in REPO_LIST; do
    input=${input//[$'\t\r\n']}
    COMMAND="git"
    LINE="$COMMAND $input"
