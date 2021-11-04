@@ -1,0 +1,9 @@
+#!/bin/bash
+ACTION="$@"
+FILENAME=$(cat .github)
+for input in $FILENAME; do
+   input=${input//[$'\t\r\n']}
+   COMMAND="git"
+   LINE="$COMMAND $input"
+   [ "$input" ] && eval "$LINE" && echo "$LINE"
+done
