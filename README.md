@@ -4,6 +4,7 @@ github.apibash.com - run your many scripts from text file list
 ```bash
 chmod +x github
 github init
+github status
 github clone
 github pull
 github pull origin
